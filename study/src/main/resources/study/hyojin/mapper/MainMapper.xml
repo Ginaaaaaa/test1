@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Maqpper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="study.hyojin.mapper.MainMapper">
+  
+  <select id="getEmplList" resultType="study.hyojin.entity.EmployeeVO">
+  		SELECT
+  			EMPLOYEE_ID,		
+  			FIRST_NAME,
+  			PHONE_NUMBER,
+  			HIRE_DATE
+  		FROM EMPLOYEES
+  </select>
+</mapper>
